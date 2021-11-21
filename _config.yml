@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            'JusticeSeeker'
 url:              
-baseurl:          /
+baseurl:          /dm_project_site
 
 github:         
   repo:           https://github.com/ulc5410/dm_project_site
