@@ -7,22 +7,22 @@
 
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-        <a href="/">Home</a>
+        <a href="{{ site.baseurl }}/">Home</a>
       </li>
       <li class="sidebar-nav-item{% if page.step == 1 %} active{% endif %}">
-        <base href="/1-ruby-and-devkit">1 Ruby</base>
+        <a href="{{ site.baseurl }}/1-ruby-and-devkit">1 Ruby</a>
       </li>
       <li class="sidebar-nav-item{% if page.step == 2 %} active{% endif %}">
-        <base href="{{ site.baseurl }}/jekyll-gem">2 Jekyll</base>
+        <a href="{{ site.baseurl }}/2-jekyll-gem">2 Jekyll</a>
       </li>
       <li class="sidebar-nav-item{% if page.step == 3 %} active{% endif %}">
-        <base href="3-syntax-highlighting">3 Syntax</base>
+        <a href="{{ site.baseurl }}/3-syntax-highlighting">3 Syntax</a>
       </li>
       <li class="sidebar-nav-item{% if page.step == 4 %} active{% endif %}">
         <a href="{{ site.baseurl }}/4-wdm-gem">4 Watch</a>
       </li>
-      <li class="/sidebar-nav-item{% if page.step == 5 %} active{% endif %}">
-        <a href="/5-running-jekyll">5 Run it</a>
+      <li class="sidebar-nav-item{% if page.step == 5 %} active{% endif %}">
+        <a href="{{ site.baseurl }}/5-running-jekyll">5 Run it</a>
       </li>
       <li class="sidebar-nav-item">
         <a href="{{ site.github.repo }}">GitHub project</a>
