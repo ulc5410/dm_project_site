@@ -1,4 +1,4 @@
-I"b<h2 id="overview">Overview</h2>
+I"�<h2 id="overview">Overview</h2>
 
 <p>Whether you’re using Markdown or HTML, Jekyll makes it easy for you to insert beautiful code blocks into your pages.</p>
 
@@ -12,13 +12,13 @@
 
 <p>Quick and painless: Open your favorite command line tool and enter the following command.</p>
 
-<pre><code>gem install rouge
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rouge
+</code></pre></div></div>
 
-<p>Then, in your <code>_config.yml</code>, set Rouge as your syntax highlighter:</p>
+<p>Then, in your <code class="language-plaintext highlighter-rouge">_config.yml</code>, set Rouge as your syntax highlighter:</p>
 
-<pre><code>highlighter: rouge
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>highlighter: rouge
+</code></pre></div></div>
 
 <p>Done!</p>
 
@@ -46,33 +46,33 @@
 
 <p>Pip is a tool for installing and managing Python packages, similar to Ruby Gems. You’ll need it to install Pygments, the Python package that pygments.rb uses to highlight your code.</p>
 
-<p>First, click on the button below and download <code>get-pip.py</code> via the link on that site.</p>
+<p>First, click on the button below and download <code class="language-plaintext highlighter-rouge">get-pip.py</code> via the link on that site.</p>
 
 <p><a href="https://pip.pypa.io/en/latest/installing.html" class="button-external" target="_blank">Get pip</a></p>
 
-<p>Next, open your favorite command line tool and navigate to the location of <code>get-pip.py</code> on your computer (e.g., <code>C:\pip\</code> or whatever folder you saved it into).</p>
+<p>Next, open your favorite command line tool and navigate to the location of <code class="language-plaintext highlighter-rouge">get-pip.py</code> on your computer (e.g., <code class="language-plaintext highlighter-rouge">C:\pip\</code> or whatever folder you saved it into).</p>
 
-<pre><code>cd C:\pip
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\pip
+</code></pre></div></div>
 
 <p>Then, run the following command to automagically download and install all required components.</p>
 
-<pre><code>python get-pip.py
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python get-pip.py
+</code></pre></div></div>
 
 <h3 id="install-python-base-of-pygments">Install Python base of Pygments</h3>
 
 <p>From the command line, run the following command to install the Python base of Pygments.</p>
 
-<pre><code>python -m pip install Pygments
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m pip install Pygments
+</code></pre></div></div>
 
 <h3 id="set-pygments-as-your-syntax-highlighter">Set Pygments as your syntax highlighter</h3>
 
-<p>If it’s not set already, add the following to your <code>_config.yml</code> to set Pygments as your syntax highlighter.</p>
+<p>If it’s not set already, add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code> to set Pygments as your syntax highlighter.</p>
 
-<pre><code>highlighter: pygments
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>highlighter: pygments
+</code></pre></div></div>
 
 <h2 id="summary">Summary</h2>
 

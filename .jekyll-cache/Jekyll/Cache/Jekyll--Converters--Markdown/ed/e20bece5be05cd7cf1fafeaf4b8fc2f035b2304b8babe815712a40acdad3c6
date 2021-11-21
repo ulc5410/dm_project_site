@@ -1,18 +1,18 @@
-I"&<p>Jekyll has a built-in auto-regeneration feature that watches your source folder for changes and then re-builds your site. Starting with Jekyll v2.4.0, the <code>jekyll serve</code> command has this enabled by default and you can use run <code>jekyll build --watch</code> to manually enable it there.</p>
+I"<p>Jekyll has a built-in auto-regeneration feature that watches your source folder for changes and then re-builds your site. Starting with Jekyll v2.4.0, the <code class="language-plaintext highlighter-rouge">jekyll serve</code> command has this enabled by default and you can use run <code class="language-plaintext highlighter-rouge">jekyll build --watch</code> to manually enable it there.</p>
 
 <h2 id="install-the-wdm-gem">Install the wdm Gem</h2>
 
 <p>On Windows, you need to install one extra tool, or rather Gem, to enable this functionality. Simply run the following command from the command line.</p>
 
-<pre><code>gem install wdm
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install wdm
+</code></pre></div></div>
 
 <h2 id="require-wdm-in-your-gemfile">Require wdm in your Gemfile</h2>
 
 <p>Alternatively, if you use a Gemfile, you can check if Jekyll runs on Windows and only then install the wdm Gem.</p>
 
-<pre><code>gem 'wdm', '~&gt; 0.1.0' if Gem.win_platform?
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'wdm', '~&gt; 0.1.0' if Gem.win_platform?
+</code></pre></div></div>
 
 <h2 id="install-working-version-of-listen-gem">Install working version of listen Gem</h2>
 
@@ -22,10 +22,10 @@
 
 <ul>
   <li>
-    <p>If you try to run <code>jekyll build --watch</code> or <code>jekyll serve</code> and the output directory already exists, Jekyll sometimes fails to build the site. If you encounter this problem, you can work around it by adding <code>--force_polling</code> to the end of your Jekyll command. See the discussion in <a href="https://github.com/twbs/bootstrap/pull/14746">twbs/bootstrap#14746</a> and <a href="https://github.com/jekyll/jekyll/issues/2926">jekyll/jekyll#2926</a> for more information.</p>
+    <p>If you try to run <code class="language-plaintext highlighter-rouge">jekyll build --watch</code> or <code class="language-plaintext highlighter-rouge">jekyll serve</code> and the output directory already exists, Jekyll sometimes fails to build the site. If you encounter this problem, you can work around it by adding <code class="language-plaintext highlighter-rouge">--force_polling</code> to the end of your Jekyll command. See the discussion in <a href="https://github.com/twbs/bootstrap/pull/14746">twbs/bootstrap#14746</a> and <a href="https://github.com/jekyll/jekyll/issues/2926">jekyll/jekyll#2926</a> for more information.</p>
   </li>
   <li>
-    <p>Jekyll’s auto-regeneration feature sometimes does not work at all. <a href="https://github.com/jekyll/jekyll/issues/2529">jekyll/jekyll#2529</a> suggests it fails on 32-bit systems and there is no known workaround. As of Jekyll v2.4.0, if your system is affected by this problem, you need to manually disable the auto-regeneration feature when you want to serve a site using Jekyll by running <code>jekyll serve --no-watch</code>.</p>
+    <p>Jekyll’s auto-regeneration feature sometimes does not work at all. <a href="https://github.com/jekyll/jekyll/issues/2529">jekyll/jekyll#2529</a> suggests it fails on 32-bit systems and there is no known workaround. As of Jekyll v2.4.0, if your system is affected by this problem, you need to manually disable the auto-regeneration feature when you want to serve a site using Jekyll by running <code class="language-plaintext highlighter-rouge">jekyll serve --no-watch</code>.</p>
   </li>
 </ul>
 

@@ -1,7 +1,6 @@
-I"�
-<h2 id="no-bom-allowed">No BOM allowed</h2>
+I"d<h2 id="no-bom-allowed">No BOM allowed</h2>
 
-<p>If there are <code>BOM</code> header characters in your UTF-8-encoded files, Jekyll will break. Make sure there are none.</p>
+<p>If there are <code class="language-plaintext highlighter-rouge">BOM</code> header characters in your UTF-8-encoded files, Jekyll will break. Make sure there are none.</p>
 
 <h2 id="set-your-encoding-to-utf-8">Set your encoding to UTF-8</h2>
 
@@ -9,19 +8,19 @@
 
 <p>If you followed this guide step by step or if your versions match the ones in this guide, you shouldn’t need to use any of the following fixes.</p>
 
-<h3 id="set-encoding-option">Set <code>encoding</code> option</h3>
+<h3 id="set-encoding-option">Set <code class="language-plaintext highlighter-rouge">encoding</code> option</h3>
 
-<p>Since Jekyll v1.3.0, you can specify the encoding in your <code>_config.yml</code>:</p>
+<p>Since Jekyll v1.3.0, you can specify the encoding in your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
 
-<pre><code>encoding: utf-8
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>encoding: utf-8
+</code></pre></div></div>
 
 <h3 id="change-console-encoding">Change console encoding</h3>
 
 <p>Alternatively, you can change your command line tool’s encoding to UTF-8 by running the following command every time you open a new console window.</p>
 
-<pre><code>chcp 65001
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chcp 65001
+</code></pre></div></div>
 
 <h2 id="use-subfolders">Use subfolders</h2>
 
@@ -34,7 +33,7 @@ Configuration file: C:\Users\You\_config.yml
       Generating...
 jekyll 2.4.0 | Error: Permission denied - .</code></pre></figure>
 
-<p>If you encounter such an error, move your site to a subdirectory (e.g., <code>C:\Users\You\awesome-jekyll-site</code>) and try again.</p>
+<p>If you encounter such an error, move your site to a subdirectory (e.g., <code class="language-plaintext highlighter-rouge">C:\Users\You\awesome-jekyll-site</code>) and try again.</p>
 
 <h2 id="the-end">The End</h2>
 

@@ -1,9 +1,9 @@
-I"u<h2 id="installation">Installation</h2>
+I"Ü<h2 id="installation">Installation</h2>
 
 <p>Jekyll itself comes in the form of a Ruby Gem, which is an easy-to-install software package. To install Jekyll and all its default dependencies, launch your favorite command line tool and enter the following command.</p>
 
-<pre><code>gem install jekyll
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
 
 <p>Hit enter, watch, enjoy. This might take a while due to the number of dependencies.</p>
 
