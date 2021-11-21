@@ -7,7 +7,7 @@ permalink:        pretty
 
 # Setup
 title:            'JusticeSeeker'
-url:              
+url:              https://github.com/ulc5410
 baseurl:          /dm_project_site
 
 github:         
@@ -16,4 +16,3 @@ github:
 
 author:
   name:           ''
-  url:            
