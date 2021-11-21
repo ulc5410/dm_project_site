@@ -6,12 +6,12 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'Run Jekyll on Windows'
+title:            'JusticeSeeker'
 url:              
 baseurl:          /
 
-github:
-  repo:           
+github:         
+  repo:           https://github.com/ulc5410/dm_project_site
 
 author:
   name:           ''
