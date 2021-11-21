@@ -12,6 +12,7 @@ baseurl:          /dm_project_site
 
 github:         
   repo:           https://github.com/ulc5410/dm_project_site
+  baseurl:        /dm_project_site
 
 author:
   name:           ''
