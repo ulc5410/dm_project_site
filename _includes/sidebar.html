@@ -10,18 +10,18 @@
         <a href="/">Home</a>
       </li>
       <li class="sidebar-nav-item{% if page.step == 1 %} active{% endif %}">
-        <a href="/1-ruby-and-devkit">1 Ruby</a>
+        <base href="/1-ruby-and-devkit">1 Ruby</base>
       </li>
       <li class="sidebar-nav-item{% if page.step == 2 %} active{% endif %}">
-        <a href="/2-jekyll-gem">2 Jekyll</a>
+        <base href="{{ site.baseurl }}/jekyll-gem">2 Jekyll</base>
       </li>
       <li class="sidebar-nav-item{% if page.step == 3 %} active{% endif %}">
-        <a href="/3-syntax-highlighting">3 Syntax</a>
+        <base href="3-syntax-highlighting">3 Syntax</base>
       </li>
       <li class="sidebar-nav-item{% if page.step == 4 %} active{% endif %}">
-        <a href="/4-wdm-gem">4 Watch</a>
+        <a href="{{ site.baseurl }}/4-wdm-gem">4 Watch</a>
       </li>
-      <li class="sidebar-nav-item{% if page.step == 5 %} active{% endif %}">
+      <li class="/sidebar-nav-item{% if page.step == 5 %} active{% endif %}">
         <a href="/5-running-jekyll">5 Run it</a>
       </li>
       <li class="sidebar-nav-item">
