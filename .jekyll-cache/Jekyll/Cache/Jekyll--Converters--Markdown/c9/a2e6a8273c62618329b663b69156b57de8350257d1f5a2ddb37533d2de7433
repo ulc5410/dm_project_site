@@ -1,4 +1,4 @@
-I"�<h2 id="overview">Overview</h2>
+I"�<h2 id="overview">Overview</h2>
 
 <p>Whether you’re using Markdown or HTML, Jekyll makes it easy for you to insert beautiful code blocks into your pages.</p>
 
@@ -76,10 +76,10 @@
 
 <h2 id="summary">Summary</h2>
 
-<p>Jekyll will now use the highlighter you chose to make all your code blocks look super sleek. We’re almost finished. Click the button below to find out how you can make Jekyll’s super-useful watch option work on Windows. Or, if you’ll never use that, <a href="/5-running-jekyll">skip ahead to some final tips for smoothly running Jekyll on Windows</a>.</p>
+<p>Jekyll will now use the highlighter you chose to make all your code blocks look super sleek. We’re almost finished. Click the button below to find out how you can make Jekyll’s super-useful watch option work on Windows. Or, if you’ll never use that, <a href="5-running-jekyll">skip ahead to some final tips for smoothly running Jekyll on Windows</a>.</p>
 
 <div class="pagination">
-  <a class="pagination-item older" href="/2-jekyll-gem">&laquo; Install Jekyll Gem</a>
-  <a class="pagination-item newer" href="/4-wdm-gem">Watch &raquo;</a>
+  <a class="pagination-item older" href="2-jekyll-gem">&laquo; Install Jekyll Gem</a>
+  <a class="pagination-item newer" href="4-wdm-gem">Watch &raquo;</a>
 </div>
 :ET

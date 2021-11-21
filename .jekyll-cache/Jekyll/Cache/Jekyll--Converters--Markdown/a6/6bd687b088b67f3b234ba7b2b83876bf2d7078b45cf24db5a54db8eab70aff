@@ -1,4 +1,4 @@
-I"d<h2 id="no-bom-allowed">No BOM allowed</h2>
+I"c<h2 id="no-bom-allowed">No BOM allowed</h2>
 
 <p>If there are <code class="language-plaintext highlighter-rouge">BOM</code> header characters in your UTF-8-encoded files, Jekyll will break. Make sure there are none.</p>
 
@@ -51,7 +51,7 @@ jekyll serve -w</code></pre></figure>
 <p>If you need help with using Jekyll in general, please visit the official Jekyll website by clicking the button below.</p>
 
 <div class="pagination">
-  <a class="pagination-item older" href="/4-wdm-gem">&laquo; Watch</a>
+  <a class="pagination-item older" href="4-wdm-gem">&laquo; Watch</a>
   <a class="pagination-item newer" href="http://jekyllrb.com" target="_blank">Jekyll Docs</a>
 </div>
 :ET

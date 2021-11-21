@@ -1,4 +1,4 @@
-I"Ü<h2 id="installation">Installation</h2>
+I"Ú<h2 id="installation">Installation</h2>
 
 <p>Jekyll itself comes in the form of a Ruby Gem, which is an easy-to-install software package. To install Jekyll and all its default dependencies, launch your favorite command line tool and enter the following command.</p>
 
@@ -18,7 +18,7 @@
 <p>Tada! You have successfully installed Jekyll. In fact, you can already build and serve sites without errors, unless there are blocks of code in there and you want to use syntax highlighting. To find out how to properly set up one of two syntax highlighters, click on the button below.</p>
 
 <div class="pagination">
-  <a class="pagination-item older" href="/1-ruby-and-devkit">&laquo; Install Ruby</a>
-  <a class="pagination-item newer" href="/3-syntax-highlighting">Beautiful Code &raquo;</a>
+  <a class="pagination-item older" href="1-ruby-and-devkit">&laquo; Install Ruby</a>
+  <a class="pagination-item newer" href="3-syntax-highlighting">Beautiful Code &raquo;</a>
 </div>
 :ET

@@ -1,4 +1,4 @@
-I"�<p>Ruby is the programming language that Jekyll is written in. You’ll need to install Ruby and the corresponding DevKit, which is needed to build some of Jekyll’s dependencies as “native extensions”.</p>
+I"�<p>Ruby is the programming language that Jekyll is written in. You’ll need to install Ruby and the corresponding DevKit, which is needed to build some of Jekyll’s dependencies as “native extensions”.</p>
 
 <h2 id="install-ruby">Install Ruby</h2>
 
@@ -42,7 +42,7 @@
 <p>That’s it! If all went well, you now have a working Ruby installation on your machine and you can build fully functional executables using the Ruby Development Kit. Ruby includes a way to install so-called <em>gems</em>—software packages that you can use from the command line. Jekyll is one of them! Click the button below to find out how you can successfully install it.</p>
 
 <div class="pagination">
-  <a class="pagination-item older" href="/">&laquo; Introduction</a>
-  <a class="pagination-item newer" href="/2-jekyll-gem">Install Jekyll Gem &raquo;</a>
+  <a class="pagination-item older" href="">&laquo; Introduction</a>
+  <a class="pagination-item newer" href="2-jekyll-gem">Install Jekyll Gem &raquo;</a>
 </div>
 :ET
