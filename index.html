@@ -16,7 +16,7 @@ title: Home
   <li>ProPublica’s analysis shows that there is racial bias in COMPAS predictions. However, the algorithm predicting recidivism is biased in favor of white defendants, and against black defendants.</li>
   <li>As fairness is getting more attention recent years, researchers develope metrics to quantify fairness in decisions and mitigate any bias and unfairness issues in ML. Figure 1 shows the number of papers, starting in 2010, that have been published in the fairness in ML domain. The figure shows that number of papers sharply increased starting in 2016 and 2017. Below is the figure 1 from <a href='https://arxiv.org/pdf/2010.04053.pdf'> FAIRNESS IN MACHINE LEARNING: A SURVEY</a>.</li>
 </ul>
-<img src="public/img/fig1.png" class="img-nice">
+<img src="public/img/fig1.png" class="">
 
 <h1 class="post-title">Motivation</h1>
 <ul>
@@ -28,4 +28,70 @@ title: Home
 </li>
 <li>Moreover, the deep model’s interpretability is bad → leverage the interpretation model LIME to show the decision of the NN model.
 </li>
+</ul>
+
+<h1 class="post-title">Related Work</h1>
+<ul>
+<li>In the survey paper <a href="https://arxiv.org/pdf/2010.04053.pdf">“Fairness in Machine Learning: A Survey,”</a> the authors mention three fairness methodological approaches. Fairness approaches can be applied prior to modeling (pre-processing), during modeling (in-processing), or after modeling (post-process).
+</li>
+<img src="public/img/fig2.png" class="">
+<li>The main idea of pre-processing is to modify the sample distributions sensitive attributes, remove discrimination from training data, and to train a model with the debiased dataset. Pre-processing is the most flexible part of the data pipeline and can be applied to any kind of following models.
+</li>
+<li>Oppositely, in-processing approaches are variant and sensitive against different kinds of models. As for post-processing, it’s more like an ad-hoc approach to make the model output fairer.
+</li>
+<li>Because our purpose is to use a naive model to show the skew distribution of a sensitive attribute that could make the trained model perform unfairly, we focus on pre-processing debiasing method in this project.
+</li>
+</ul>
+
+<h1 class="post-title">Exploratory Data Analysis</h1>
+<div class="row">
+  <div class="column">
+    <img src="public/img/eda1.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/eda2.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/eda3.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/eda4.png" style="width:100%">
+  </div>
+</div>
+
+
+
+<h1 class="post-title">Observation: Feature Interaction Bias</h1>
+<ul>
+<li>A unbiased sensitive attribute may contain biased when consider other non-sensitive attributes.
+</li>
+<li>The two evenly distributed races show biased when combining age spans.
+</li>
+</ul>
+
+<div class="row">
+  <div class="column">
+    <img src="public/img/interaction_bias1.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/interaction_bias3.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/interaction_bias2.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="public/img/interaction_bias4.png" style="width:100%">
+  </div>
+</div>
+
+<h1 class="post-title">Debias Experiment with FNN and Interpretation with LIME</h1>
+
+
+
+<h1 class="post-title">Conclusion</h1>
+<ul>
+<li>The COMPAS dataset doesn’t provide some crucial features, such as joblessness and poverty.(original dataset contains 137 features)
+</li>
+<li>Biases can be shown when consider non-sensitive attribute.</li>
+<li>We proposed a debiased FNN with an essential pre-processing debias method, under-sampling.</li>
 </ul>
