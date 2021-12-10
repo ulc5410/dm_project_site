@@ -1,0 +1,85 @@
+I"�<h2 id="overview">Overview</h2>
+
+<p>Whether you’re using Markdown or HTML, Jekyll makes it easy for you to insert beautiful code blocks into your pages.</p>
+
+<p>By default, Jekyll comes with pygments.rb, which is a syntax highlighter based on Python. To use it on Windows, you’ll need to install Python and some extra tools.</p>
+
+<p>A nice alternative is the Ruby-based Rouge, which is faster and easier to install, but doesn’t support as many languages as Pygments.</p>
+
+<p>Below, you’ll find instructions for both syntax highlighters. Choose the one that best suits your needs. More information can be found on <a href="http://jekyllrb.com/docs/templates/#code-snippet-highlighting">the official Jekyll website</a>.</p>
+
+<h2 id="install-rouge">Install Rouge</h2>
+
+<p>Quick and painless: Open your favorite command line tool and enter the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rouge
+</code></pre></div></div>
+
+<p>Then, in your <code class="language-plaintext highlighter-rouge">_config.yml</code>, set Rouge as your syntax highlighter:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>highlighter: rouge
+</code></pre></div></div>
+
+<p>Done!</p>
+
+<h2 id="make-pygments-work">Make Pygments work</h2>
+
+<p>If you want to use Pygments, which is a default Jekyll dependency, for syntax highlighting on Windows, you need to install Python, pip and finally the Python base of pygments.rb.</p>
+
+<p><strong>Note:</strong> After you complete the following steps, Jekyll might still output errors when building or serving sites. These shouldn’t cause any real problems though, so you can safely ignore them.</p>
+
+<h3 id="install-python">Install Python</h3>
+
+<p>The latest working version of Python at the time of writing is v2.7.8. Python 3 will not work.</p>
+
+<p>Click the button below and download the v2.7 installer that matches your system’s architecture (32bits / 64bits).</p>
+
+<p><a href="http://www.python.org/download/" class="button-external" target="_blank">Get Python</a></p>
+
+<p>Execute the downloaded file and go through the steps of the installation.</p>
+
+<p>When you get to the screen below, make sure to click on the box next to <em>Add python.exe to Path</em> and select “Entire feature will be installed on local hard drive.”</p>
+
+<p><img alt="Screenshot from the Python installation" src="../public/img/python-path.png" class="img-nice" /></p>
+
+<h3 id="install-pip">Install pip</h3>
+
+<p>Pip is a tool for installing and managing Python packages, similar to Ruby Gems. You’ll need it to install Pygments, the Python package that pygments.rb uses to highlight your code.</p>
+
+<p>First, click on the button below and download <code class="language-plaintext highlighter-rouge">get-pip.py</code> via the link on that site.</p>
+
+<p><a href="https://pip.pypa.io/en/latest/installing.html" class="button-external" target="_blank">Get pip</a></p>
+
+<p>Next, open your favorite command line tool and navigate to the location of <code class="language-plaintext highlighter-rouge">get-pip.py</code> on your computer (e.g., <code class="language-plaintext highlighter-rouge">C:\pip\</code> or whatever folder you saved it into).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\pip
+</code></pre></div></div>
+
+<p>Then, run the following command to automagically download and install all required components.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python get-pip.py
+</code></pre></div></div>
+
+<h3 id="install-python-base-of-pygments">Install Python base of Pygments</h3>
+
+<p>From the command line, run the following command to install the Python base of Pygments.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m pip install Pygments
+</code></pre></div></div>
+
+<h3 id="set-pygments-as-your-syntax-highlighter">Set Pygments as your syntax highlighter</h3>
+
+<p>If it’s not set already, add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code> to set Pygments as your syntax highlighter.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>highlighter: pygments
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Jekyll will now use the highlighter you chose to make all your code blocks look super sleek. We’re almost finished. Click the button below to find out how you can make Jekyll’s super-useful watch option work on Windows. Or, if you’ll never use that, <a href="5-running-jekyll">skip ahead to some final tips for smoothly running Jekyll on Windows</a>.</p>
+
+<div class="pagination">
+  <a class="pagination-item older" href="2-jekyll-gem">&laquo; Install Jekyll Gem</a>
+  <a class="pagination-item newer" href="4-wdm-gem">Watch &raquo;</a>
+</div>
+:ET
