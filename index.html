@@ -3,12 +3,12 @@ layout: default
 title: Home
 ---
 
-<h1 class="post-title">Introduction</h1>
+<h1 class="post-title" id="1">Introduction</h1>
 <p>Judges from many states use risk assessment scores as their reference during criminal sentencing. It is important for those risk assessment scores to be unbiased.</p>
 <p>Our project idea is to examine biases in records, mitigate those biases and propose a fair recidivism prediction model. Then leverage the interpretation model LIME to show the decision of the NN model.
 </p>
 
-<h1 class="post-title">Problem Background</h1>
+<h1 class="post-title" id="2">Problem Background</h1>
 <ul>
   <li>It is increasingly common in courtrooms across the nation that use risk assessments. They are used to inform decisions about who can be set free at every stage of the criminal justice system, from assigning bond amounts. In Arizona, Colorado, Delaware, Kentucky, Louisiana, Oklahoma, Virginia, Washington, and Wisconsin, the results of such assessments are given to judges during criminal sentencing.</li>
   <li>Northpointe (now Equivant) is a company in justice industry that provide the tools and expertise to reduce risks. COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is their algorithm designed for judging if criminal defendants would recidivism in the future. Broward County primarily uses the score to determine whether to release or detain a defendant before his or her trial in the hope of addressing jail overcrowding. <a href='https://www.documentcloud.org/documents/2702103-Sample-Risk-Assessment-COMPAS-CORE.html#document/p8/a296604'>Here is a sample survey Northpointe used to calculate COMPAS scores</a></li>
@@ -18,7 +18,7 @@ title: Home
 </ul>
 <img src="public/img/fig1.png" class="">
 
-<h1 class="post-title">Motivation</h1>
+<h1 class="post-title" id="3">Motivation</h1>
 <ul>
 <li>There are always injustice cases in the world. If an unfair model trained by biased datasets plays a role in verdicts, there will be more injustice cases.
 </li>
@@ -30,7 +30,7 @@ title: Home
 </li>
 </ul>
 
-<h1 class="post-title">Related Work</h1>
+<h1 class="post-title" id="4">Related Work</h1>
 <ul>
 <li>In the survey paper <a href="https://arxiv.org/pdf/2010.04053.pdf">“Fairness in Machine Learning: A Survey,”</a> the authors mention three fairness methodological approaches. Fairness approaches can be applied prior to modeling (pre-processing), during modeling (in-processing), or after modeling (post-process).
 </li>
@@ -43,14 +43,22 @@ title: Home
 </li>
 </ul>
 
-<h1 class="post-title">Exploratory Data Analysis</h1>
+<h1 class="post-title" id="5">Exploratory Data Analysis</h1>
 <div class="row">
+	<ul>
+	<li>The first figure shows defendants' age distributions for different sex. From the figure, we can see most defendants are in their 20s. And there are more male defendants than female defendants.</li>
+	<li>The second figure shows feature correlations in a heatmap. There 0.27 correlation betwen priors count and 2-years-recidivism. There are little correlations between most features.</li>
+	</ul>
   <div class="column">
     <img src="public/img/eda1.png"  style="width:100%">
   </div>
   <div class="column">
     <img src="public/img/eda2.png" style="width:100%">
   </div>
+    <ul>
+	<li>The third figure shows the recidivism counts by race. We see most groups has similar distribution between people reoffended and those didn't. Only African-American has different distribution. This motivated us look into their feature interaction bias in the next section.</li>
+	<li>estimate of central tendency for a numeric variable by the position of scatter plot points</li>
+	</ul>
   <div class="column">
     <img src="public/img/eda3.png"  style="width:100%">
   </div>
@@ -59,16 +67,13 @@ title: Home
   </div>
 </div>
 
-
-
-<h1 class="post-title">Observation: Feature Interaction Bias</h1>
+<h1 class="post-title" id="6">Observation: Feature Interaction Bias</h1>
 <ul>
 <li>A unbiased sensitive attribute may contain biased when consider other non-sensitive attributes.
 </li>
 <li>The two evenly distributed races show biased when combining age spans.
 </li>
 </ul>
-
 <div class="row">
   <div class="column">
     <img src="public/img/interaction_bias1.png"  style="width:100%">
@@ -84,11 +89,74 @@ title: Home
   </div>
 </div>
 
-<h1 class="post-title">Debias Experiment with FNN and Interpretation with LIME</h1>
+<h1 class="post-title" id="7">Debias Experiment with FNN and Interpretation</h1>
+<img src="public/img/lime.png" class="">
+<ul>
+<li>For the model interpretation, we use an explanation model called Local Interpretable Model-agnostic Explanations (LIME), to show the decision function of trained models against input features.
+</li>
+<li>For an instance X being explained, LIME samples instances around X, and weight them according to their proximity to X. Following, LIME learns a linear model that approximates the model, the linear model is shown as the dashed line in the figure above.
+</li>
+<li>To show the decision weight of models, we list top ten weights of input features.
+As for the differences between the vallina model and the debiased model, the decision weight of sex of debiased model is slightly lower than the vallina. It shows under-sampling training data can mitigate the decision weight of target sensitive attribute.
+</li>
+</ul>
 
+<h3 class="post-title">Experiment Downsampling Data Based on Sex</h3>
+<table>
+  <tr>
+    <th colspan="4">Debias by Under Sampling (Protected Attribute: Sex) <h6>(Female, Male)</h6></th>
+  </tr>
+  <tr>
+    <td>Model (F : M)</td>
+    <td>Accuracy</td>
+    <td>F1-score</td>
+	<td>Demographic Parity</td>
+  </tr>
+  <tr>
+    <td>FNN (1:4)</td>
+    <td>0.5925</td>
+    <td>0.5203</td>
+	<td>0.0537</td>
+  </tr>
+  <tr>
+    <td>FNN (1:1)</td>
+    <td>0.5835</td>
+    <td>0.5296</td>
+	<td>0.0470</td>
+  </tr>
+</table>
 
+<h6>FNN (1:4)</h6>
+<img src="public/img/lime_reci1_sex_1to4.png" class="">
+<h6>FNN (1:4)</h6>
+<img src="public/img/lime_reci1_sex_1to1.png" class="">
 
-<h1 class="post-title">Conclusion</h1>
+<h3 class="post-title">Experiment Downsampling Data Based on Race</h3>
+<table>
+  <tr>
+    <th colspan="4">Debias by Under Sampling (Protected Attribute: Race) <h6>(African-American, Caucasian)</h6></th>
+  </tr>
+  <tr>
+    <td>Model (A-A : C)</td>
+    <td>Accuracy</td>
+    <td>F1-score</td>
+	<td>Demographic Parity</td>
+  </tr>
+  <tr>
+    <td>FNN (3:2)</td>
+    <td>0.5935</td>
+    <td>0.5621</td>
+	<td>0.0917</td>
+  </tr>
+  <tr>
+    <td>FNN (1:1)</td>
+    <td>0.5750</td>
+    <td>0.4946</td>
+	<td>0.0693</td>
+  </tr>
+</table>
+
+<h1 class="post-title" id="8">Conclusion</h1>
 <ul>
 <li>The COMPAS dataset doesn’t provide some crucial features, such as joblessness and poverty.(original dataset contains 137 features)
 </li>

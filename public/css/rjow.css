@@ -32,7 +32,7 @@ tbody tr:nth-child(odd) th {
 
 @media (min-width: 48rem) {
   .content {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 }
 
@@ -70,7 +70,7 @@ tbody tr:nth-child(odd) th {
 
 /* Sidebar links */
 .sidebar a {
-  color: #333;
+  color: #ddd;
 }
 
 /* About section */
