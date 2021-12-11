@@ -57,7 +57,7 @@ title: Home
   </div>
     <ul>
 	<li>The third figure shows the recidivism counts by race. We see most groups has similar distribution between people reoffended and those didn't. Only African-American has different distribution. This motivated us look into their feature interaction bias in the next section.</li>
-	<li>estimate of central tendency for a numeric variable by the position of scatter plot points</li>
+	<li>The fourth figure is a point plot showing estimate of central tendency for 2-years-recidivism. We can see the rate for African-American is high at over 0.5 and has low uncertainty.</li>
 	</ul>
   <div class="column">
     <img src="public/img/eda3.png"  style="width:100%">
@@ -128,7 +128,7 @@ As for the differences between the vallina model and the debiased model, the dec
 
 <h6>FNN (1:4)</h6>
 <img src="public/img/lime_reci1_sex_1to4.png" class="">
-<h6>FNN (1:4)</h6>
+<h6>FNN (1:1)</h6>
 <img src="public/img/lime_reci1_sex_1to1.png" class="">
 
 <h3 class="post-title">Experiment Downsampling Data Based on Race</h3>
@@ -158,8 +158,19 @@ As for the differences between the vallina model and the debiased model, the dec
 
 <h1 class="post-title" id="8">Conclusion</h1>
 <ul>
-<li>The COMPAS dataset doesn’t provide some crucial features, such as joblessness and poverty.(original dataset contains 137 features)
+<li>The COMPAS dataset doesn’t provide some crucial features, such as joblessness and poverty. (original dataset contains 137 features)
 </li>
 <li>Biases can be shown when consider non-sensitive attribute.</li>
 <li>We proposed a debiased FNN with an essential pre-processing debias method, under-sampling.</li>
+<li>The model interpretation results show under-sampling training data can mitigate the model decision bias against the target sensitive attribute.</li>
+<li>It is not necessarily a tradeoff between fairness and downstream task performance.</li>
+<li>As for future works, we can explore the impact of feature interaction bias and figure out how to mitigate it for training a more fair model.</li>
+<li>Aggregating and extracting more feature from the raw data is also a potential direction we can do for analyzing the data distributed bias of COMPAS.</li>
 </ul>
+
+
+
+
+
+
+
