@@ -1,9 +1,110 @@
----
-layout: Meet
-title: 相關硬體
-<!-- permalink: / -->
----
-<div class="container mb">
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta name="description" content="Cloudpe website testing">
+    <meta name="author" content="Charles Chou">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- #use per IE standards 6-11 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- #improve mobile experience -->
+	<!-- #browser favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+    <title>瑩端數位 - 相關硬體</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="/assets/css/w3.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	
+
+</head>
+
+    <body>
+            <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><!--toggle @media (min-width: 768px)  -->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a id="brand-picture" class="navbar-brand" href="/index.html">  <!--left-top picture -->
+        <img alt="瑩端數位" src="/assets/img/cloudpe.png">
+      </a>   
+	  <a id="brand-name" class="navbar-brand" href="/index.html">瑩端數位</a>
+
+    </div> <!--navbar-header -->
+	
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <!--關於瑩端 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">關於瑩端</a>
+		  <ul class="dropdown-menu" >
+			  <li><a href="/pages/aboutus/about.html">公司簡介</a></li>
+			  <li><a href="/pages/aboutus/services.html">經營項目</a></li>
+			  <li><a href="/pages/aboutus/news.html">最新消息</a></li>
+			  <li><a href="/pages/aboutus/client.html">公司客戶</a></li>	
+		  </ul>
+		</li>
+		<li class="dropdown"><!--行動線上會議 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">企業私有雲會議系統</a>
+		  <ul class="dropdown-menu">
+			  <li><a href="/pages/Meet/Meet_about.html" | prepend: site.baseurl ">產品簡介</a></li>
+			  <li><a href="/pages/Meet/Meet_features.html" | prepend: site.baseurl ">功能特色</a></li>
+			  <li><a href="/pages/Meet/Meet_scenario.html" | prepend: site.baseurl ">應用情境</a></li>
+			  <li><a href="/pages/Meet/Meet_hardware.html">相關硬體</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown"><!--錄播教學系統 -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">錄播教學系統</a>
+		  <ul class="dropdown-menu">
+			  <li><a href="/pages/Lecture/Lecture_lecture.html" | prepend: site.baseurl ">Lecture錄播系統</a></li>
+			  <li><a href="/pages/Lecture/Lecture_MOOC.html" | prepend: site.baseurl ">MOOC課程平台</a></li>
+			  <li><a href="/pages/Lecture/Lecture_service.html" | prepend: site.baseurl ">提供服務</a></li>
+			  <li><a href="/pages/Lecture/Lecture_story.html" | prepend: site.baseurl ">成功案例</a></li>
+		  </ul>
+		</li>
+        <li ><a class="centered" href="/pages/contact.html">聯絡瑩端</a></li><!--聯絡瑩端 -->
+		<li class="dropdown"><!--language icon -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--language icon -->
+		  <ul class="dropdown-menu">
+			  <li><a href="/index.html">繁體</a></li>
+			  <li><a href="/pages/cn/index.html">简体</a></li>
+			  <li><a href="/pages/eng/index.html">English</a></li>
+		  </ul>
+		</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--container -->
+</div>
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>相關硬體</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+    <div class="container">
+  <h4 class="centered">Cloudpe-Meet 企業私有雲會議系統</h4>
+  <div  class="container centered">
+    <ul class="href_list">        
+      <li><a href="/pages/Meet/Meet_about.html" | prepend: site.baseurl ">產品簡介</a></li>
+      <li><a href="/pages/Meet/Meet_features.html" | prepend: site.baseurl ">功能特色</a></li>
+      <li><a href="/pages/Meet/Meet_scenario.html" | prepend: site.baseurl ">應用情境</a></li>
+      <li><a href="/pages/Meet/Meet_hardware.html" | prepend: site.baseurl ">相關硬體</a></li>
+    </ul>
+  </div><!--/container -->
+  <br>
+</div>
+  <div class="container mb">
   <div class="col-lg-10 text_2col">
 	<div class="col-lg-5">
 	  <h4>Duet PCS MT202</h4>
@@ -23,7 +124,7 @@ title: 相關硬體
 	    <li>小型至中型會議室</li>
 	  </ul>
 	  <br>
-	  <img src="{{ "/assets/img/hardware/mt-202.png" | prepend: site.baseurl }}{{ client.img }}" class="img-responsive">
+	  <img src="/assets/img/hardware/mt-202.png" class="img-responsive">
     </div>
 	<div class="col-lg-5 ">
 	  <h6 class="bold">功能特色</h6>
@@ -48,7 +149,7 @@ title: 相關硬體
 	  <p>Konftel 55W是一個令人印象深刻的，水晶般清澈的聲音獲得專利的的音頻技術OmniSoundR易於使用，小型會議單元。Konftel 55W可連接電腦，手機/平板電腦和桌面電話。無論是什麼通訊工具，您的會議將進行具有卓越的聲音質量。Konftel 55W 提供充電電池可以讓你方便隨處使用，也使用SD記憶卡保存當作會議記錄。 </p>
 	</div>
 	<div class="col-lg-5 ">
-	  <img src="{{ "/assets/img/hardware/Konftel_55_W.jpg" | prepend: site.baseurl }}{{ client.img }}" class="img-responsive">
+	  <img src="/assets/img/hardware/Konftel_55_W.jpg" class="img-responsive">
 	</div>
 	<div class="col-lg-5 ">
 	  <br>
@@ -68,7 +169,7 @@ title: 相關硬體
 	  <p>Jabra SPEAK 510 是一款供個人使用的揚聲器，可以結合 Microsoft Lync 2010、Cisco或 Avaya 等統一通訊產品使用。裝置中整合了各種通話控制功能，例如接聽／掛斷按鈕、調高／調低音量按鈕，讓您毋須開啟電腦的應用程式亦能操作軟體式電話。另外，它還提供最適合小組會議通話的全方向麥克風，並擁有寬頻水準的出色音質。</p>
 	</div>
 	<div class="col-lg-10 ">
-	  <img src="{{ "/assets/img/hardware/Jabra_speak_510.jpg" | prepend: site.baseurl }}{{ client.img }}" class="img-responsive">
+	  <img src="/assets/img/hardware/Jabra_speak_510.jpg" class="img-responsive">
 	</div>
 	<div class="col-lg-10 ">
 	  <h6 class="bold">功能特色</h6>
@@ -87,7 +188,7 @@ title: 相關硬體
 	  <br>
 	  <h4 class="bold">明日 UV510A</h4>
 	  <ul class="list_2col">
-	    <img src="{{ "/assets/img/hardware/UV510A.jpg" | prepend: site.baseurl }}{{ client.img }}" class="img-responsive">
+	    <img src="/assets/img/hardware/UV510A.jpg" class="img-responsive">
 		<li>採用1/2.8 英寸207 最大分辨率可達1920x1080，輸出幀率高達60 幀/秒。</li>
 		<li>具有5X、10X、12X、20X 等多種光學變倍鏡頭選擇，鏡頭具有83.7°無畸變寬視角。</li>
 		<li>低噪聲CMOS 採用先進的2D、3D 降噪技術，降低了噪聲，同時又能確保圖像清晰度。</li>
@@ -99,3 +200,94 @@ title: 相關硬體
 
   </div>
 </div>
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>關於</h4>
+                <div class="hline-w"></div>
+                <p>瑩端數位致力於以線上視訊為人們的生活創造價值。線上即時通訊已成潮流所趨，將深入至教育、出版與各類型的商業服務與應用之中。瑩端數位期待對線上視訊的努力帶給人們生活變革性的影響。</p>
+            </div>
+            <div class="col-lg-4">
+                <h4>相關連結</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                          <span class="sr-only">facebook</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <span class="sr-only">twitter</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                          <span class="sr-only">instagram</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-tumblr" aria-hidden="true"></i>
+                          <span class="sr-only">tumblr</span>
+                        </a>
+                    
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>公司地址</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        台灣台北總公司 <br>
+                    
+                        台北市松山區復興北路167號7樓之4 <br>
+                    
+                         <br>
+                    
+                </p>
+            </div>
+        </div><!--/row -->
+	<div class="hline-w"></div>
+    </div><!--/container -->
+	<div class="container centered" id="footer_bottom">
+        <div class="row">
+            <div class="col-lg-4">
+				<ul id="language">
+					<li>語言:</li>
+					<li><a href="/index.html">繁體</a></li>
+					<li><a href="/pages/cn/index.html">简体</a></li>
+					<li><a href="/pages/eng/index.html">English</a></li>
+				</ul>
+            </div>
+            <div class="col-lg-4">
+				<span id="_copyright">&copy; 2023 Cloudpe Inc. All Rights Reserved</span>
+            </div>
+            <div class="col-lg-4">
+				<ul class="copyright " id="terms_policy">
+					<li><a href="/pages/career.html">人才招募</a></li>
+					<li><a href="/pages/privacy.html">隱私權政策</a></li>
+					<li><a href="/pages/terms.html">服務條款</a></li>
+				</ul>
+            </div>
+        </div><!--/row -->
+    </div><!--/container -->
+</div><!--/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<!-- <script src="/assets/js/retina-1.1.0.js"></script> -->
+
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/slideshow.js"></script>
+
+<script>
+
+    </body>
+</html>
