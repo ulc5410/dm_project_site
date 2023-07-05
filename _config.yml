@@ -11,10 +11,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-theme: jekyll-agency
+theme: jekyll-agency       
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url    : "https://github.com/ulc5410" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dm_project_site" # the subpath of your site, e.g. /blog
 
 title      : Your Awesome Website
 email      : your-email@example.com #this is also the email contact forms will go to
