@@ -1,0 +1,55 @@
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>关于</h4>
+                <div class="hline-w"></div>
+                <p>{{ site.about_cn }}</p>
+            </div>
+            <div class="col-lg-4">
+                <h4>相关连结</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for network in site.social %}
+                        <a href="{{ network.url }}" class="btn-social btn-outline">
+                          <i class="fa fa-{{ network.title }}" aria-hidden="true"></i>
+                          <span class="sr-only">{{network.title}}</span>
+                        </a>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>公司地址</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for line in site.address_cn.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+            </div>
+        </div><!--/row -->
+	<div class="hline-w"></div>
+    </div><!--/container -->
+	<div class="container centered" id="footer_bottom">
+        <div class="row">
+            <div class="col-lg-4">
+				<ul id="language">
+					<li>语言:</li>
+					<li><a href="{{"/index.html" | prepend: site.baseurl }}">繁體</a></li>
+					<li><a href="{{"/pages/cn/index.html" | prepend: site.baseurl }}">简体</a></li>
+					<li><a href="{{"/pages/eng/index.html" | prepend: site.baseurl }}">English</a></li>
+				</ul>
+            </div>
+            <div class="col-lg-4">
+				<span id="_copyright">&copy; {{ site.time | date: '%Y' }} Cloudpe Inc. All Rights Reserved</span>
+            </div>
+            <div class="col-lg-4">
+				<ul class="copyright " id="terms_policy">
+					<li><a href="{{"/pages/cn/career.html" | prepend: site.baseurl }}">人才招募</a></li>
+					<li><a href="{{"/pages/cn/privacy.html" | prepend: site.baseurl }}">隐私权政策</a></li>
+					<li><a href="{{"/pages/cn/terms.html" | prepend: site.baseurl }}">服务条款</a></li>
+				</ul>
+            </div>
+        </div><!--/row -->
+    </div><!--/container -->
+</div><!--/footerwrap -->

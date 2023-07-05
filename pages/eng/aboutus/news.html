@@ -1,0 +1,126 @@
+---
+layout: content_eng
+title: News
+<!-- permalink: / -->
+---
+<div class="container mb">
+  <div class="col-lg-10 text">
+	<h4>News</h4>
+	<button onclick="accordion('news3')" class="accordion w3-btn w3-block w3-grey w3-left-align">2015-02-02 Cloudpe-Meet Plans and Pricing</button>
+	<div id="news3" class="w3-container w3-hide">
+		<div style="overflow-x:auto;">
+		  <table>
+			<tr>
+			  <th>Plans</th>
+			  <th>Free</th>
+			  <th>Premium 10</th>
+			</tr>
+			<tr>
+			  <td>Attendees</td>
+			  <td>3 people</td>
+			  <td>10 people</td>
+			</tr>
+			<tr>
+			  <td>Number of meeting rooms</td>
+			  <td>1</td>
+			  <td>Unlimited</td>
+			</tr>
+			<tr>
+			  <td>Meeting duration</td>
+			  <td>Unlimited</td>
+			  <td>Unlimited</td>
+			</tr>
+			<tr>
+			  <th>Number of meetings</th>
+			  <th>Unlimited</th>
+			  <th>Unlimited</th>
+			</tr>
+			<tr>
+			  <td>HD video</td>
+			  <td>X</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <td>HD voice</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <td>Group messaging</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <th>Whiteboard</th>
+			  <th>V</th>
+			  <th>V</th>
+			</tr>
+			<tr>
+			  <td>Screen sharing</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <td>Group and private chat</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <th>Snapshot</th>
+			  <th>V</th>
+			  <th>V</th>
+			</tr>
+			<tr>
+			  <td>Mac, Windows support</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+			<tr>
+			  <td>iOS, Android support</td>
+			  <td>V</td>
+			  <td>V</td>
+			</tr>
+		  </table>
+		</div>
+	</div>
+	<button onclick="accordion('news2')" class="accordion w3-btn w3-block w3-grey w3-left-align">2013-12-09 Cloudpe-Lecture Wins 2013 Innovation Product Award</button>
+	<div id="news2" class="w3-container w3-hide">
+	  <img class="award" src="{{ "/assets/img/award_1.png" | prepend: site.baseurl }}" class="img-responsive"/>
+	  <p> 
+		Cloudpe-Lecture has won theTaipei Computer Association(TCA)Innovation Product Award 2013inthe digital learning category. This honor recognizes our commitment to innovative and excellent learning solutions.
+	  </p>
+	  <p> 
+		Cloudpe-Lecture’s nominations were initially evaluated by an expert team of judges, with the overall winners being selected by the TCA in a strict voting process limited to businesses with knowledge and familiarity of the digital learning technology industries.
+	  </p>
+	  <p> 
+		“We are pleased to receive this award for our cloud-based digital learning solution. We strive to effectively leverage technologies in bringing new, differentiated learning tools to market,”said Ty Tsai, CEO of Cloudpe Corporation.
+	  </p>
+	  <p> 
+		“Cloudpe-Lecture is recognized for delivering innovation and excellence while leveraging the latest educational technology trends to create an exceptionaluser experience for the digital learner.”
+	  </p>
+	</div>
+	<button onclick="accordion('news1')" class="accordion w3-btn w3-block w3-grey w3-left-align">2013-05-30 Cloudpe Corp. "Open Course Record Platform" Seminar</button>
+	<div id="news1" class="w3-container w3-hide">
+	  <p>
+		There was a seminar last May 30th at 2 P.M., where Cloudpe and some customer attended. It was held at Tamkang University Campus in Taipei. Tamkang University President Zhang Jiayi, Tamkang University Park Executive Vice President Gao Bo, and general managers of several publishing companies like Dingli attended to "Open Course Record Platform" seminar.
+	  </p>
+	  <p>
+	    Cloudpe Corp. chairman Lu Kunrui (Tamkang University Department of Electrical Engineering student) provided "Cloudpe-Lecture" as a donation to Tankang University, and a ceremony with this purpose was held during the afternoon. This tool is an intelligent digital lecture recording system with the possibility to broadcast recorded media. Professor Chang appreciation words: "Lu Kun Rui, Electrical Engineering Student Association member, spares no effort to support school activities, more recently presented this platform, providing excellent environment for teachers and students improving learning methodology; The presented lecture capture solution will record, next academic year, more than 10 languages courses, to provide students another learning platform."
+	  </p>
+	  <p>
+	    The system was presented and there was a demostration of its capabilities. All the practical experience with Cloudpe-Lecture as a record and broadcast solution was shared during the seminar. Cloudpe Corp. also presented and demo other products and all the attendees shared a debate about all the presented products and exchanged ideas in a friendly atmosphere.
+	  </p>
+	</div>
+  </div>
+</div>
+
+<script>
+function accordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
