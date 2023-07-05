@@ -1,55 +1,71 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+### GENERAL SETTINGS ###
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Site settings
+title: 瑩端數位
+title_eng: Cloudepe
+title_cn: 瑩端數位
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+#analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "" #"https://ulc5410.github.io/"
+
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+
+# ### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+  - title: instagram
+    url:
+  - title: tumblr
+    url:
+
+# # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - 台灣台北總公司
+    - 台北市松山區復興北路167號7樓之4
+    -
+address_eng:
+  - lines:
+    - Rm. 4, 7F., No.167, Fuxing N. Rd., Songshan Dist., 
+    - Taipei City 105, Taiwan
+address_cn:
+  - lines:
+    - 台湾台北总公司
+    - 台北市松山区复兴北路167号7楼之4
+    -
+email: hello@solidtheme.com
+tel: +34 8493-4893
+
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: 國立臺灣大學
+    img: client01.png
+  - name: 國立臺北科技大學
+    img: client02.png
+  - name: 文化大學
+    img: client03.png
+  - name: 友尚集團
+    img: client04.png
+    
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "瑩端數位致力於以線上視訊為人們的生活創造價值。線上即時通訊已成潮流所趨，將深入至教育、出版與各類型的商業服務與應用之中。瑩端數位期待對線上視訊的努力帶給人們生活變革性的影響。"
+about_eng: "Cloudpe offers education and web conferencing solutions that allows people make presentations and share videos, files and ideas across the globe."
+about_cn: "莹端数位致力于以线上视讯为人们的生活创造价值。线上即时通讯已成潮流所趋，将深入至教育、出版与各类型的商业服务与应用之中。莹端数位期待对线上视讯的努力带给人们生活变革性的影响。"
