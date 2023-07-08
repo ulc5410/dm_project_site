@@ -10,7 +10,7 @@
 	<!-- #browser favicon -->
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 
-    <title>光合作用教育</title>
+    <title>Light Effect Education - Contact</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -19,55 +19,52 @@
 	<link href="/assets/css/w3.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-	
 
 </head>
 
     <body>
-            <!-- Fixed navbar -->
+        <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-
-	  <a id="brand-picture" class="navbar-brand" href="/index.html">  <!--left-top picture -->
-	          <img width="40%" height="40%" alt="光合作用教育" src="/assets/img/cloudpe.png">
-    </a>
-	  <a id="brand-name" class="navbar-brand" href="/index.html">光合作用教育</a>
-
+	  <a id="brand-picture" class="navbar-brand" href="/pages/eng/index.html">  <!--left-top picture -->
+        <img width="40%" height="40%" alt="光合作用教育" src="/assets/img/cloudpe.png">
+      </a>
+	  <a id="brand-name" class="navbar-brand" href="/pages/eng/index.html">Light Effect Education</a>
     </div> <!--navbar-header -->
-
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li class="dropdown"> <!--关于我们 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">关于我们</a>
+        <!-- <li ><a href="/">首頁</a></li><!--Home --> -->
+        <li class="dropdown"> <!--關於瑩端 -->
+		  <a class="dropdown-toggle" id="nav_about" data-toggle="dropdown" href="#">About Us</a>
 		  <ul class="dropdown-menu" >
-			  <li><a href="/pages/aboutus/about.html">公司简介</a></li>
-			  <li><a href="/pages/aboutus/services.html">申请服务</a></li>
-			  <li><a href="/pages/aboutus/news.html">留学资讯</a></li>
-			  <li><a href="/pages/aboutus/client.html">导师阵容</a></li>
+			  <li><a href="/pages/eng/aboutus/about.html">About</a></li>
+			  <li><a href="/pages/eng/aboutus/services.html">Services</a></li>
+			  <li><a href="/pages/eng/aboutus/news.html">News</a></li>
+			  <li><a href="/pages/eng/aboutus/client.html">Mentors</a></li>
 		  </ul>
 		</li>
-		<li class="dropdown"><!--留学申请 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">申请服务</a>
+		<li class="dropdown"><!--行動線上會議 -->
+		  <a class="dropdown-toggle" id="nav_meet" data-toggle="dropdown" href="#">Study Abroad Tips</a>
 		  <ul class="dropdown-menu">
-			  <li><a href="/pages/Meet/Meet_about.html" | prepend: site.baseurl ">本硕申请</a></li>
-			  <li><a href="/pages/Meet/Meet_features.html" | prepend: site.baseurl ">高中申请</a></li>
-			  <li><a href="/pages/Meet/Meet_scenario.html" | prepend: site.baseurl ">雅思托福GRE</a></li>
-			  <li><a href="/pages/Meet/Meet_hardware.html">其他服务</a></li>
+			  <li><a href="/pages/eng/Meet/Meet_about.html" | prepend: site.baseurl ">Apply for Universities</a></li>
+			  <li><a href="/pages/eng/Meet/Meet_features.html" | prepend: site.baseurl ">Apply for High Schools</a></li>
+			  <li><a href="/pages/eng/Meet/Meet_scenario.html" | prepend: site.baseurl ">IELTS/TOEFL/GRE </a></li>
+			  <li><a href="/pages/eng/Meet/Meet_hardware.html">Other Services</a></li>
 		  </ul>
 		</li>
-		<li class="dropdown"><!--案例与干货 -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">案例与干货</a>
-		  <ul class="dropdown-menu">
-			  <li><a href="/pages/Lecture/Lecture_lecture.html" | prepend: site.baseurl ">录取案例</a></li>
-			  <li><a href="/pages/Lecture/Lecture_MOOC.html" | prepend: site.baseurl ">教育干货</a></li>
-			  <li><a href="/pages/Lecture/Lecture_service.html" | prepend: site.baseurl ">最新讲座</a></li>
-			  <li><a href="/pages/Lecture/Lecture_story.html" | prepend: site.baseurl ">学员Offer</a></li>
-		  </ul>
-		</li>
-        <li ><a class="centered" href="/pages/contact.html">点我咨询</a></li><!--点我咨询 -->
-		<li class="dropdown"><!--language icon -->
-		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--language icon -->
+		<!-- <li class="dropdown"><!--錄播教學系統 -->
+		  <!-- <a class="dropdown-toggle" id="nav_leture" data-toggle="dropdown" href="#">LECTURE</a> -->
+		  <!-- <ul class="dropdown-menu"> -->
+			  <!-- <li><a href="#">About</a></li> -->
+			  <!-- <li><a href="#">MOOC Platform</a></li> -->
+			  <!-- <li><a href="#">Services</a></li> -->
+			  <!-- <li><a href="#">Success Stories</a></li> -->
+		  <!-- </ul> -->
+		<!-- </li> -->
+        <li class="active"><a class="centered" href="/pages/eng/contact.html">Contact</a></li><!--聯絡瑩端 -->
+		<li class="dropdown"><!--lang_globe -->
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i id="lang_globe"class="fa fa-globe fa-lg" aria-hidden="true"></i></a><!--globe icon -->
 		  <ul class="dropdown-menu">
 			  <li><a href="/index.html">中文</a></li>
 			  <li><a href="/pages/eng/index.html">English</a></li>
@@ -79,38 +76,36 @@
 </div>
 
 
-            <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>Contact</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+    <div class="container mb">
+  <div class="col-lg-10 text">
+	<h4> Contact Us </h4>
+	<div>
+	  <ul>
+	    <li>Branch Office: United States<br />Tel: +1 (646) 504-3632</li>
+	  </ul>
+	</div>
+  </div>
 </div>
 
 
         <div id="footerwrap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <h4>关于</h4>
+            <div class="col-lg-4">
+                <h4>About</h4>
                 <div class="hline-w"></div>
-                <p>光合作用是一家创立于纽约的教育咨询公司。旗下导师均来自于哈佛、纽约大学、斯坦福、哥伦比亚大学等世界名校，曾就职于各大教育培训机构、留学申请中心、国际顶级公司和国际组织等，对留学申请有深刻的了解。</p>
+                <p>Light Effect is an educational consulting company founded in New York. Our team of mentors hails from renowned institutions such as Harvard, New York University, Stanford, Columbia University, and other prestigious universities worldwide. They have previously worked at prominent educational training institutions, study abroad application centers, top international companies, and international organizations, providing them with a deep understanding of the study abroad application process..</p>
             </div>
-            <div class="col-lg-6">
-                <h4>相关平台</h4>
+            <div class="col-lg-4">
+                <h4>Social Links</h4>
                 <div class="hline-w"></div>
                 <p>
                     
@@ -137,24 +132,19 @@
                 </p>
             </div>
         </div><!--/row -->
-	<div class="hline-w"></div>
+		<div class="hline-w"></div>
     </div><!--/container -->
 	<div class="container centered" id="footer_bottom">
         <div class="row">
-            <div class="col-lg-6">
-      				<ul id="language">
-      					<li>语言 Language:</li>
-      					<li><a href="/index.html">简体</a></li>
-      					<li><a href="/pages/eng/index.html">English</a></li>
-      				</ul>
+            <div class="col-lg-4">
+				<ul id="language">
+					<li>Language:</li>
+					<li><a href="/index.html">简体</a></li>
+					<li><a href="/pages/eng/index.html">English</a></li>
+				</ul>
             </div>
             <div class="col-lg-4">
-				<span id="_copyright">&copy; 2023 LightEffect Edu. All Rights Reserved</span>
-            </div>
-            <div class="col-lg-6">
-      				<ul class="copyright " id="terms_policy">
-      					<li><a href="/pages/career.html">人才招募</a></li>
-      				</ul>
+				<span id="_copyright">&copy; 2023 Light Effect Edu. All Rights Reserved</span>
             </div>
         </div><!--/row -->
     </div><!--/container -->
