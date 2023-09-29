@@ -1,1 +1,1 @@
-Sitemap: /http://lighteffect-edu.com/sitemap.xml
+Sitemap: /https://lighteffect-edu.com/sitemap.xml
