@@ -1,0 +1,51 @@
+title: "lighteffect.edu"
+email: ulc5410@gmail.com
+timezone: UTC
+repository: https://ulc5410.github.io
+description: no description
+baseurl: https://lighteffect-edu.com
+  # https://ulc5410.github.io/dm_project_site
+permalink: "/:title/"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+author: 光合作用教育
+paginate: 6
+disqus: 'demowebsite'
+locale: en_us
+lang: en_us
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+ganalytics: UA-113961478-1
+
+# Authors
+authors:
+  光合作用小助手:
+    name: 光合作用小助手
+    display_name: 光合作用小助手
+    avatar: 'assets/images/sal.png'
+    email: wowthemesnet@gmail.com
+    web:
+    twitter:
+    description: "Light Effect is an educational consulting company founded in New York. Our team of mentors hails from renowned institutions such as Harvard, New York University, Stanford, Columbia University, and other prestigious universities worldwide."
+
+# Social
+social:
+  instagram:
+  facebook:
+  twitter:
+
+# Plugins
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
